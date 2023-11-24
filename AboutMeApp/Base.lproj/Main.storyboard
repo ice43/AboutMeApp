@@ -121,16 +121,19 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="hU2-eQ-3nf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Log out">
+                                <state key="normal" title="log out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="a3H-hX-V67" kind="unwind" unwindAction="unwindFor:" id="lG6-RN-fvC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tOn-Qg-ndn"/>
@@ -148,8 +151,12 @@
                             <constraint firstItem="q5T-7s-4z2" firstAttribute="bottom" secondItem="MDJ-Zp-qWP" secondAttribute="bottom" id="v8K-Qe-Agc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="JOf-DR-PJb" id="A7t-Vl-G1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4s-sw-ZSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="a3H-hX-V67" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="936.64122137404581" y="-27.464788732394368"/>
         </scene>
