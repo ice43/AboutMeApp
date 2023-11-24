@@ -86,6 +86,8 @@
 			dependencies = (
 			);
 			name = AboutMeApp;
+			packageProductDependencies = (
+			);
 			productName = AboutMeApp;
 			productReference = CD2EC50E2B10876F00D146F7 /* AboutMeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +116,8 @@
 				Base,
 			);
 			mainGroup = CD2EC5052B10876F00D146F7;
+			packageReferences = (
+			);
 			productRefGroup = CD2EC50F2B10876F00D146F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
