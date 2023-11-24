@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CD2EC5122B10876F00D146F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5112B10876F00D146F7 /* AppDelegate.swift */; };
 		CD2EC5142B10876F00D146F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5132B10876F00D146F7 /* SceneDelegate.swift */; };
-		CD2EC5162B10876F00D146F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5152B10876F00D146F7 /* ViewController.swift */; };
+		CD2EC5162B10876F00D146F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5152B10876F00D146F7 /* LoginViewController.swift */; };
 		CD2EC5192B10876F00D146F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2EC5172B10876F00D146F7 /* Main.storyboard */; };
 		CD2EC51B2B10877000D146F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2EC51A2B10877000D146F7 /* Assets.xcassets */; };
 		CD2EC51E2B10877000D146F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2EC51C2B10877000D146F7 /* LaunchScreen.storyboard */; };
+		CD2EC5262B108AC500D146F7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5252B108AC500D146F7 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD2EC50E2B10876F00D146F7 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2EC5112B10876F00D146F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD2EC5132B10876F00D146F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD2EC5152B10876F00D146F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD2EC5152B10876F00D146F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CD2EC5182B10876F00D146F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD2EC51A2B10877000D146F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD2EC51D2B10877000D146F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD2EC51F2B10877000D146F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2EC5252B108AC500D146F7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				CD2EC5112B10876F00D146F7 /* AppDelegate.swift */,
 				CD2EC5132B10876F00D146F7 /* SceneDelegate.swift */,
-				CD2EC5152B10876F00D146F7 /* ViewController.swift */,
+				CD2EC5152B10876F00D146F7 /* LoginViewController.swift */,
 				CD2EC5172B10876F00D146F7 /* Main.storyboard */,
+				CD2EC5252B108AC500D146F7 /* WelcomeViewController.swift */,
 				CD2EC51A2B10877000D146F7 /* Assets.xcassets */,
 				CD2EC51C2B10877000D146F7 /* LaunchScreen.storyboard */,
 				CD2EC51F2B10877000D146F7 /* Info.plist */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2EC5162B10876F00D146F7 /* ViewController.swift in Sources */,
+				CD2EC5162B10876F00D146F7 /* LoginViewController.swift in Sources */,
+				CD2EC5262B108AC500D146F7 /* WelcomeViewController.swift in Sources */,
 				CD2EC5122B10876F00D146F7 /* AppDelegate.swift in Sources */,
 				CD2EC5142B10876F00D146F7 /* SceneDelegate.swift in Sources */,
 			);
@@ -298,8 +302,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.AboutMeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +332,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +340,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.AboutMeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
