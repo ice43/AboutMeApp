@@ -9,14 +9,15 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
-    var welcomeText = ""
-    
     @IBOutlet private weak var welcomeLabel: UILabel!
+    
+    var welcomeText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         welcomeLabel.text = welcomeText
     }
+
     
 }

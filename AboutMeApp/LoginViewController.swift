@@ -19,7 +19,8 @@ final class LoginViewController: UIViewController {
     
     // MARK: - Override Methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     // MARK: - Navigation
@@ -29,7 +30,8 @@ final class LoginViewController: UIViewController {
     ) -> Bool {
         guard usernameTextField.text == username,
               passwordTextField.text == password else {
-            invalidData()
+            alert(with: "Invalid login or password", 
+                  and: "Please, enter correct login and password")
             return false
         }
         
@@ -45,27 +47,11 @@ final class LoginViewController: UIViewController {
     
     // MARK: - IB Actions
     @IBAction private func forgotUsernameAction() {
-        let alert = UIAlertController(
-            title: "Oops!",
-            message: "Your name is \(username) 😉",
-            preferredStyle: .alert
-        )
-        let okButton = UIAlertAction(title: "OK", style: .default)
-        
-        alert.addAction(okButton)
-        present(alert, animated: true)
+        alert(with: "Oops!", and: "Your name is \(username) 😉")
     }
     
     @IBAction private func forgotPasswordAction() {
-        let alert = UIAlertController(
-            title: "Oops!",
-            message: "Your password is \(password) 😉",
-            preferredStyle: .alert
-        )
-        let okButton = UIAlertAction(title: "OK", style: .default)
-        
-        alert.addAction(okButton)
-        present(alert, animated: true)
+        alert(with: "Oops!", and: "Your password is \(password) 😉")
     }
     
     @IBAction private func unwind(for segue: UIStoryboardSegue) {
@@ -74,10 +60,11 @@ final class LoginViewController: UIViewController {
     }
     
     // MARK: - Private Methods
-    private func invalidData() {
+
+    private func alert(with title: String, and message: String) {
         let alert = UIAlertController(
-            title: "Invalid login or password",
-            message: "Please, enter correct login and password",
+            title: title,
+            message: message,
             preferredStyle: .alert
         )
         let okButton = UIAlertAction(title: "OK", style: .default)
@@ -85,7 +72,6 @@ final class LoginViewController: UIViewController {
         alert.addAction(okButton)
         present(alert, animated: true)
     }
-    
 }
 
 
