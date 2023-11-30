@@ -31,7 +31,9 @@ final class LoginViewController: UIViewController {
         guard usernameTextField.text == username,
               passwordTextField.text == password else {
             alert(with: "Invalid login or password", 
-                  and: "Please, enter correct login and password")
+                  and: "Please, enter correct login and password") {
+                self.passwordTextField.text = ""
+            }
             return false
         }
         
@@ -42,7 +44,7 @@ final class LoginViewController: UIViewController {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {
             return
         }
-        welcomeVC.welcomeText = "Welcome, \(usernameTextField.text ?? "")!"
+        welcomeVC.welcomeText = username
     }
     
     // MARK: - IB Actions
@@ -61,13 +63,19 @@ final class LoginViewController: UIViewController {
     
     // MARK: - Private Methods
 
-    private func alert(with title: String, and message: String) {
+    private func alert(
+        with title: String,
+        and message: String,
+        completion: (() -> ())? = nil
+    ) {
         let alert = UIAlertController(
             title: title,
             message: message,
             preferredStyle: .alert
         )
-        let okButton = UIAlertAction(title: "OK", style: .default)
+        let okButton = UIAlertAction(title: "OK", style: .default) { _ in
+            completion?()
+        }
         
         alert.addAction(okButton)
         present(alert, animated: true)
