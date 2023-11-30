@@ -13,9 +13,11 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var usernameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
-    // MARK: - Private Properties
-    private let username = "user"
-    private let password = "pass"
+//    // MARK: - Private Properties
+//    private let username = "user"
+//    private let password = "pass"
+    
+    private let user = User.getUser()
     
     // MARK: - Override Methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -28,9 +30,9 @@ final class LoginViewController: UIViewController {
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        guard usernameTextField.text == username,
-              passwordTextField.text == password else {
-            alert(with: "Invalid login or password", 
+        guard usernameTextField.text == user.username,
+              passwordTextField.text == user.password else {
+            alert(with: "Invalid login or password",
                   and: "Please, enter correct login and password") {
                 self.passwordTextField.text = ""
             }
@@ -44,16 +46,16 @@ final class LoginViewController: UIViewController {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {
             return
         }
-        welcomeVC.welcomeText = username
+        welcomeVC.welcomeText = user.username
     }
     
     // MARK: - IB Actions
     @IBAction private func forgotUsernameAction() {
-        alert(with: "Oops!", and: "Your name is \(username) 😉")
+        alert(with: "Oops!", and: "Your name is \(user.username) 😉")
     }
     
     @IBAction private func forgotPasswordAction() {
-        alert(with: "Oops!", and: "Your password is \(password) 😉")
+        alert(with: "Oops!", and: "Your password is \(user.password) 😉")
     }
     
     @IBAction private func unwind(for segue: UIStoryboardSegue) {
