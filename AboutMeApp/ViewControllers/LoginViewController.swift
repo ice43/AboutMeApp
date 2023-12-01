@@ -39,36 +39,39 @@ final class LoginViewController: UIViewController {
         return true
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else {
             return
         }
         
         tabBarVC.viewControllers?.forEach { viewController in
+            
             if let welcomeVC = viewController as? WelcomeViewController {
+                
                 welcomeVC.welcomeText = user.username
                 welcomeVC.nameText = user.person.name + " " + user.person.surname
                 
-            } else if let navigationVC = viewController as? UINavigationController {
+            } else if let navigationVC = viewController
+                        as? UINavigationController {
                 
-                navigationVC.viewControllers.forEach { viewController in
-                    if let profileVC = viewController as? ProfileViewController {
-                        profileVC.title = user.person.name + " " + user.person.surname
-                        
-                        profileVC.name = user.person.name
-                        profileVC.surname = user.person.surname
-                        profileVC.company = user.person.company
-                        profileVC.department = user.person.department
-                        profileVC.post = user.person.post
-                        
-                    } else if let bioVC = viewController as? BioViewController {
-                        bioVC.bio = user.person.bio
-                    }
+                guard let profileVC = navigationVC.topViewController 
+                        as? ProfileViewController else {
+                    return
                 }
                 
+                profileVC.title = user.person.name + " " + user.person.surname
+                
+                profileVC.name = user.person.name
+                profileVC.surname = user.person.surname
+                profileVC.company = user.person.company
+                profileVC.department = user.person.department
+                profileVC.post = user.person.post
+                profileVC.bio = user.person.bio
             }
             
         }
+        
     }
     
     // MARK: - IB Actions

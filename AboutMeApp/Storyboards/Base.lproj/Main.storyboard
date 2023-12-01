@@ -332,11 +332,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="a7p-xl-9aj">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ris-Jg-nh8">
-                                <rect key="frame" x="38" y="416" width="339" height="20.333333333333314"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="339" id="bPP-r5-MKz"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ris-Jg-nh8">
+                                <rect key="frame" x="20" y="116" width="353" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -347,10 +344,11 @@
                         <constraints>
                             <constraint firstItem="a7p-xl-9aj" firstAttribute="leading" secondItem="5Yq-nh-IM8" secondAttribute="leading" id="MYb-G0-xtH"/>
                             <constraint firstItem="a7p-xl-9aj" firstAttribute="top" secondItem="z5c-eu-v1s" secondAttribute="top" id="PrM-Gh-OLy"/>
-                            <constraint firstItem="ris-Jg-nh8" firstAttribute="centerX" secondItem="z5c-eu-v1s" secondAttribute="centerX" constant="11" id="ZBX-G2-evO"/>
+                            <constraint firstItem="ris-Jg-nh8" firstAttribute="centerX" secondItem="z5c-eu-v1s" secondAttribute="centerX" id="ZBX-G2-evO"/>
                             <constraint firstAttribute="bottom" secondItem="a7p-xl-9aj" secondAttribute="bottom" id="bBW-SL-rBh"/>
                             <constraint firstItem="a7p-xl-9aj" firstAttribute="trailing" secondItem="5Yq-nh-IM8" secondAttribute="trailing" id="dSj-QO-zZ7"/>
-                            <constraint firstItem="ris-Jg-nh8" firstAttribute="centerY" secondItem="z5c-eu-v1s" secondAttribute="centerY" id="icy-f0-9ti"/>
+                            <constraint firstItem="ris-Jg-nh8" firstAttribute="leading" secondItem="5Yq-nh-IM8" secondAttribute="leading" constant="20" id="fJo-FX-abx"/>
+                            <constraint firstItem="ris-Jg-nh8" firstAttribute="top" secondItem="5Yq-nh-IM8" secondAttribute="top" constant="20" id="zRh-3S-O5g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My name bio" id="wz1-xk-hE4"/>

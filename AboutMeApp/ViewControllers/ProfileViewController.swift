@@ -21,6 +21,7 @@ final class ProfileViewController: UIViewController {
     var company = ""
     var department = ""
     var post = ""
+    var bio = ""
     
     
     override func viewDidLoad() {
@@ -38,6 +39,14 @@ final class ProfileViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         profileView.layer.cornerRadius = profileView.frame.width / 2
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let bioVC = segue.destination as? BioViewController else {
+            return
+        }
+        
+        bioVC.bio = bio
     }
 
 }

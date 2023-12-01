@@ -13,17 +13,9 @@ final class BioViewController: UIViewController {
     
     var bio = ""
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        bioLabel.text = bio
-//    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         bioLabel.text = bio
     }
-
-
 }
