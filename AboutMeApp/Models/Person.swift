@@ -27,7 +27,7 @@ struct Person {
         language. At the age of 16, I entered the College of \
         Telecommunications, which gave me a good technical base. At the age of \
         20, I graduated from college, got a few odd \
-        jobs, then at the age of 21 I got my current job. I spent the first\
+        jobs, then at the age of 21 I got my current job. I spent the first \
         money to close some health issues, then I saved \
         up money for a MacBook and a SwiftBook course. And now, more than ever, \
         I am close to realizing my plans...
