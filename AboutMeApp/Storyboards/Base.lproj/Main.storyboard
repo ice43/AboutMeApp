@@ -147,7 +147,6 @@
                         <constraints>
                             <constraint firstItem="NLC-pK-OZe" firstAttribute="top" secondItem="JOf-DR-PJb" secondAttribute="bottom" constant="8" symbolic="YES" id="1PO-eG-vnr"/>
                             <constraint firstItem="f8p-uj-gnO" firstAttribute="top" secondItem="JOf-DR-PJb" secondAttribute="bottom" constant="68" id="2RH-Sk-65r"/>
-                            <constraint firstItem="tOn-Qg-ndn" firstAttribute="bottom" secondItem="23j-a3-me9" secondAttribute="bottom" constant="212" id="7Ey-2k-R9B"/>
                             <constraint firstItem="23j-a3-me9" firstAttribute="centerX" secondItem="MDJ-Zp-qWP" secondAttribute="centerX" id="GbZ-St-DSR"/>
                             <constraint firstItem="q5T-7s-4z2" firstAttribute="trailing" secondItem="MDJ-Zp-qWP" secondAttribute="trailing" id="HIE-W5-kqi"/>
                             <constraint firstItem="JOf-DR-PJb" firstAttribute="top" secondItem="q5T-7s-4z2" secondAttribute="top" constant="197" id="MiK-sa-TDF"/>
@@ -155,6 +154,7 @@
                             <constraint firstItem="JOf-DR-PJb" firstAttribute="centerX" secondItem="MDJ-Zp-qWP" secondAttribute="centerX" id="Xdu-HL-JSR"/>
                             <constraint firstItem="q5T-7s-4z2" firstAttribute="leading" secondItem="MDJ-Zp-qWP" secondAttribute="leading" id="XtM-tf-vIg"/>
                             <constraint firstItem="q5T-7s-4z2" firstAttribute="top" secondItem="MDJ-Zp-qWP" secondAttribute="top" id="opE-fT-SJU"/>
+                            <constraint firstItem="23j-a3-me9" firstAttribute="top" secondItem="f8p-uj-gnO" secondAttribute="bottom" constant="192" id="pIZ-No-z2T"/>
                             <constraint firstItem="q5T-7s-4z2" firstAttribute="bottom" secondItem="MDJ-Zp-qWP" secondAttribute="bottom" id="v8K-Qe-Agc"/>
                             <constraint firstItem="NLC-pK-OZe" firstAttribute="centerX" secondItem="MDJ-Zp-qWP" secondAttribute="centerX" id="ySS-i7-VT0"/>
                         </constraints>
@@ -186,8 +186,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="9EM-T7-6nU">
                                 <rect key="frame" x="106.66666666666669" y="136" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="uBa-RF-mPT"/>
-                                    <constraint firstAttribute="height" constant="180" id="xcd-2W-D4w"/>
+                                    <constraint firstAttribute="width" secondItem="9EM-T7-6nU" secondAttribute="height" multiplier="1:1" id="KLQ-f9-vCa"/>
+                                    <constraint firstAttribute="width" constant="180" id="L8V-te-jFq"/>
+                                    <constraint firstAttribute="height" constant="180" id="kpM-aB-8w8"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Osi-Ha-KhH">
@@ -290,6 +291,7 @@
                             <constraint firstItem="9EM-T7-6nU" firstAttribute="top" secondItem="mmH-aG-ZF6" secondAttribute="top" constant="40" id="Pjz-ch-8gN"/>
                             <constraint firstItem="Osi-Ha-KhH" firstAttribute="top" secondItem="9EM-T7-6nU" secondAttribute="bottom" constant="76" id="S8i-hM-yHy"/>
                             <constraint firstAttribute="trailing" secondItem="mgs-Xc-ngK" secondAttribute="trailing" id="Tpp-FY-RgK"/>
+                            <constraint firstItem="mmH-aG-ZF6" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Osi-Ha-KhH" secondAttribute="bottom" constant="168.33000000000001" id="VXt-fJ-3qc"/>
                             <constraint firstItem="mmH-aG-ZF6" firstAttribute="trailing" secondItem="9EM-T7-6nU" secondAttribute="trailing" constant="106.33" id="bWT-ed-r87"/>
                             <constraint firstItem="mgs-Xc-ngK" firstAttribute="leading" secondItem="uNz-ei-2D2" secondAttribute="leading" id="cXo-rf-9RN"/>
                             <constraint firstAttribute="bottom" secondItem="mgs-Xc-ngK" secondAttribute="bottom" id="edF-TG-Edl"/>
@@ -395,7 +397,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="fjg-gx-2dg" kind="relationship" relationship="rootViewController" id="KiB-DN-7Zx"/>
+                        <segue destination="fjg-gx-2dg" kind="relationship" relationship="rootViewController" id="8px-eM-0WE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKA-Ha-NFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

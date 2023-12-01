@@ -31,10 +31,12 @@ final class ProfileViewController: UIViewController {
         companyLabel.text = company
         departmentLabel.text = department
         postLabel.text = post
+        
+        profileView.layoutIfNeeded()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         profileView.layer.cornerRadius = profileView.frame.width / 2
     }
 
