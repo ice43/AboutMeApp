@@ -14,9 +14,6 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     
 //    // MARK: - Private Properties
-//    private let username = "user"
-//    private let password = "pass"
-    
     private let user = User.getUser()
     
     // MARK: - Override Methods
@@ -43,10 +40,35 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else {
+        guard let tabBarVC = segue.destination as? UITabBarController else {
             return
         }
-        welcomeVC.welcomeText = user.username
+        
+        tabBarVC.viewControllers?.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.welcomeText = user.username
+                welcomeVC.nameText = user.person.name + " " + user.person.surname
+                
+            } else if let navigationVC = viewController as? UINavigationController {
+                
+                navigationVC.viewControllers.forEach { viewController in
+                    if let profileVC = navigationVC.topViewController as? ProfileViewController {
+                        profileVC.title = user.person.name + " " + user.person.surname
+                        
+                        profileVC.name = user.person.name
+                        profileVC.surname = user.person.surname
+                        profileVC.company = user.person.company
+                        profileVC.department = user.person.department
+                        profileVC.post = user.person.post
+                        
+                    } else if let bioVC = navigationVC.viewControllers.last as? BioViewController {
+                        bioVC.bio = user.person.bio
+                    }
+                }
+                
+            }
+            
+        }
     }
     
     // MARK: - IB Actions

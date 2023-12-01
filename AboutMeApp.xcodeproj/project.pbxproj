@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD238C392B188D9F00424616 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD238C382B188D9F00424616 /* User.swift */; };
 		CD238C3B2B188DA900424616 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD238C3A2B188DA900424616 /* Person.swift */; };
+		CD238C3F2B18BD0F00424616 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD238C3E2B18BD0F00424616 /* ProfileViewController.swift */; };
 		CD2EC5122B10876F00D146F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5112B10876F00D146F7 /* AppDelegate.swift */; };
 		CD2EC5142B10876F00D146F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5132B10876F00D146F7 /* SceneDelegate.swift */; };
 		CD2EC5162B10876F00D146F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5152B10876F00D146F7 /* LoginViewController.swift */; };
@@ -16,11 +17,13 @@
 		CD2EC51B2B10877000D146F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2EC51A2B10877000D146F7 /* Assets.xcassets */; };
 		CD2EC51E2B10877000D146F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2EC51C2B10877000D146F7 /* LaunchScreen.storyboard */; };
 		CD2EC5262B108AC500D146F7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5252B108AC500D146F7 /* WelcomeViewController.swift */; };
+		CDE6D0032B19AC070059AA6F /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6D0022B19AC070059AA6F /* BioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD238C382B188D9F00424616 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD238C3A2B188DA900424616 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CD238C3E2B18BD0F00424616 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD2EC50E2B10876F00D146F7 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2EC5112B10876F00D146F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD2EC5132B10876F00D146F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		CD2EC51D2B10877000D146F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD2EC51F2B10877000D146F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2EC5252B108AC500D146F7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CDE6D0022B19AC070059AA6F /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				CD2EC5152B10876F00D146F7 /* LoginViewController.swift */,
 				CD2EC5252B108AC500D146F7 /* WelcomeViewController.swift */,
+				CD238C3E2B18BD0F00424616 /* ProfileViewController.swift */,
+				CDE6D0022B19AC070059AA6F /* BioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 				CD238C3B2B188DA900424616 /* Person.swift in Sources */,
 				CD2EC5162B10876F00D146F7 /* LoginViewController.swift in Sources */,
 				CD2EC5262B108AC500D146F7 /* WelcomeViewController.swift in Sources */,
+				CDE6D0032B19AC070059AA6F /* BioViewController.swift in Sources */,
 				CD2EC5122B10876F00D146F7 /* AppDelegate.swift in Sources */,
+				CD238C3F2B18BD0F00424616 /* ProfileViewController.swift in Sources */,
 				CD238C392B188D9F00424616 /* User.swift in Sources */,
 				CD2EC5142B10876F00D146F7 /* SceneDelegate.swift in Sources */,
 			);
