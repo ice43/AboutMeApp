@@ -50,7 +50,7 @@ final class LoginViewController: UIViewController {
             if let welcomeVC = viewController as? WelcomeViewController {
                 
                 welcomeVC.welcomeText = user.username
-                welcomeVC.nameText = user.person.name + " " + user.person.surname
+                welcomeVC.nameText = user.person.fullName
                 
             } else if let navigationVC = viewController
                         as? UINavigationController {
@@ -60,14 +60,8 @@ final class LoginViewController: UIViewController {
                     return
                 }
                 
-                profileVC.title = user.person.name + " " + user.person.surname
-                
-                profileVC.name = user.person.name
-                profileVC.surname = user.person.surname
-                profileVC.company = user.person.company
-                profileVC.department = user.person.department
-                profileVC.post = user.person.post
-                profileVC.bio = user.person.bio
+                profileVC.title = user.person.fullName
+                profileVC.user = user
             }
             
         }

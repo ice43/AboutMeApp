@@ -16,22 +16,18 @@ final class ProfileViewController: UIViewController {
     @IBOutlet private weak var departmentLabel: UILabel!
     @IBOutlet private weak var postLabel: UILabel!
     
-    var name = ""
-    var surname = ""
-    var company = ""
-    var department = ""
-    var post = ""
-    var bio = ""
+    
+    var user: User?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = name
-        surnameLabel.text = surname
-        companyLabel.text = company
-        departmentLabel.text = department
-        postLabel.text = post
+        nameLabel.text = user?.person.name
+        surnameLabel.text = user?.person.surname
+        companyLabel.text = user?.person.company
+        departmentLabel.text = user?.person.department
+        postLabel.text = user?.person.post
         
         profileView.layoutIfNeeded()
     }
@@ -46,7 +42,7 @@ final class ProfileViewController: UIViewController {
             return
         }
         
-        bioVC.bio = bio
+        bioVC.bio = user?.person.bio ?? ""
     }
 
 }

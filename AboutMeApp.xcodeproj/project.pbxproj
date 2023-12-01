@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD238C392B188D9F00424616 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD238C382B188D9F00424616 /* User.swift */; };
-		CD238C3B2B188DA900424616 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD238C3A2B188DA900424616 /* Person.swift */; };
 		CD238C3F2B18BD0F00424616 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD238C3E2B18BD0F00424616 /* ProfileViewController.swift */; };
 		CD2EC5122B10876F00D146F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5112B10876F00D146F7 /* AppDelegate.swift */; };
 		CD2EC5142B10876F00D146F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EC5132B10876F00D146F7 /* SceneDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		CD238C382B188D9F00424616 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CD238C3A2B188DA900424616 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CD238C3E2B18BD0F00424616 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD2EC50E2B10876F00D146F7 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2EC5112B10876F00D146F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				CD238C382B188D9F00424616 /* User.swift */,
-				CD238C3A2B188DA900424616 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,7 +186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD238C3B2B188DA900424616 /* Person.swift in Sources */,
 				CD2EC5162B10876F00D146F7 /* LoginViewController.swift in Sources */,
 				CD2EC5262B108AC500D146F7 /* WelcomeViewController.swift in Sources */,
 				CDE6D0032B19AC070059AA6F /* BioViewController.swift in Sources */,
