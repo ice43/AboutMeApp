@@ -52,7 +52,7 @@ final class LoginViewController: UIViewController {
             } else if let navigationVC = viewController as? UINavigationController {
                 
                 navigationVC.viewControllers.forEach { viewController in
-                    if let profileVC = navigationVC.topViewController as? ProfileViewController {
+                    if let profileVC = viewController as? ProfileViewController {
                         profileVC.title = user.person.name + " " + user.person.surname
                         
                         profileVC.name = user.person.name
@@ -61,7 +61,7 @@ final class LoginViewController: UIViewController {
                         profileVC.department = user.person.department
                         profileVC.post = user.person.post
                         
-                    } else if let bioVC = navigationVC.viewControllers.last as? BioViewController {
+                    } else if let bioVC = viewController as? BioViewController {
                         bioVC.bio = user.person.bio
                     }
                 }
