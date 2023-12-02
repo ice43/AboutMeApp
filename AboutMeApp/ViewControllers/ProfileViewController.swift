@@ -23,6 +23,7 @@ final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        profileView.image = UIImage(named: user?.photo ?? "")
         nameLabel.text = user?.person.name
         surnameLabel.text = user?.person.surname
         companyLabel.text = user?.person.company

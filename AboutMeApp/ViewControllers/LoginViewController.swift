@@ -13,7 +13,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var usernameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
-//    // MARK: - Private Properties
+    //  MARK: - Private Properties
     private let user = User.getUser()
     
     // MARK: - Override Methods
@@ -49,13 +49,13 @@ final class LoginViewController: UIViewController {
             
             if let welcomeVC = viewController as? WelcomeViewController {
                 
-                welcomeVC.welcomeText = user.username
-                welcomeVC.nameText = user.person.fullName
+                welcomeVC.user = user
                 
-            } else if let navigationVC = viewController
-                        as? UINavigationController {
+            } else 
+            if let navigationVC = viewController as? UINavigationController {
                 
-                guard let profileVC = navigationVC.topViewController 
+                guard 
+                    let profileVC = navigationVC.topViewController 
                         as? ProfileViewController else {
                     return
                 }
