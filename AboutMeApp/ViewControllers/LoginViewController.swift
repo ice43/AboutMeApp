@@ -47,28 +47,6 @@ final class LoginViewController: UIViewController {
         
         
         tabBarVC.user = user
-        
-//        tabBarVC.viewControllers?.forEach { viewController in
-//            
-//            if let welcomeVC = viewController as? WelcomeViewController {
-//                
-//                welcomeVC.user = user
-//                
-//            } else 
-//            if let navigationVC = viewController as? UINavigationController {
-//                
-//                guard 
-//                    let profileVC = navigationVC.topViewController 
-//                        as? ProfileViewController else {
-//                    return
-//                }
-//                
-//                profileVC.title = user.person.fullName
-//                profileVC.user = user
-//            }
-//            
-//        }
-        
     }
     
     // MARK: - IB Actions
